@@ -1,0 +1,562 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    width: 100%; /* Ensure it spans the full width */
+    border-bottom: 2px solid #c9c0c0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allow the logo section to shrink and grow */
+}
+
+.logo-section img {
+    height: 35px;
+    margin-right: 15px;
+}
+
+.search-bar {
+    flex-grow: 1; /* Make the search bar take up remaining space */
+    margin: 0 15px; /* Add space on both sides of the search bar */
+}
+
+.search-bar input {
+    width: 100%; /* Make the input field take up the full width of the search bar */
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.login-section {
+    margin-left: 15px; /* Add margin to the left of the login section */
+}
+
+.login-section .login-btn {
+    background-color: #6fa8e7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding-top: 50px;
+}
+.explore {
+    background-color: #6fa8e7;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.banner-info h2 {
+    margin-bottom: 10px;
+}
+
+.banner-info p {
+    max-width: 400px;
+}
+
+.banner-info .btn {
+    background-color: #ff5722;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.discussion-form,
+.memories-section {
+    width: 48%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px; /* Set equal height for both sections */
+}
+
+.discussion-form h3 {
+    margin-bottom: 15px;
+}
+.discussion-card {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.memories-section {
+    width: 48%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.memories-section h3 {
+    margin-bottom: 15px;
+}
+
+.memories-slider img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Banner Container */
+.banner-container {
+    position: relative;
+    width: 60%;  
+    max-width: 900px;  
+    height: 250px;  
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Banner Image */
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Banner Content */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%);
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-content .highlight {
+    color: #FFCC00;  /* Yellowish highlight color */
+}
+
+.banner-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.know-more-btn {
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.know-more-btn:hover {
+    background-color: #FFCC00;
+}
+
+
+
+
+/* Discussion Forum Container */
+.discussion-forum {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Forum Header */
+.forum-header {
+    background: linear-gradient(90deg, #2E5EAA, #4A8FE2);
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.forum-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Forum Item */
+.forum-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.forum-item:last-child {
+    border-bottom: none;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: grey;
+}
+
+/* Action Icon */
+.action-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+/* Container for Banner and Discussion Forum */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%; /* Adjust width as per your need */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.banner-text h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.banner-text p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.banner-btn {
+    background-color: #ff9f00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Discussion Forum Section */
+.discussion-forum {
+    width: 35%; /* Adjust width as per your need */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.forum-header {
+    background: linear-gradient(90deg, #2E5EAA, #4A8FE2);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.forum-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.forum-item:last-child {
+    border-bottom: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: grey;
+}
+
+.action-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.frame-container {
+    width: 50%;
+    max-width: 1000px;
+    background-color: #f0f0f5;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #2f73ba;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.header h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image-frame and frame-container */
+}
+
+.image-frame {
+    flex: 1; /* Adjust flex-grow as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-frame img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.frame-container {
+    flex: 1; /* Match size to image-frame */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure it matches the size of the image-frame */
+    max-width: 100%; /* Adjust to ensure it does not exceed container width */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px; /* Decrease space below the header */
+    font-size: 1.2em; /* Decrease font size */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
+
+.image-gallery img {
+    max-width: 200px; /* Increase size of images */
+    height: auto;
+    border-radius: 10px; /* Optional */
+}
+
+
+
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Full width for the container */
+    white-space: nowrap; /* Prevents cards from wrapping to the next line */
+    overflow-x: auto; /* Adds horizontal scroll if the screen is too small */
+    padding: 10px; /* Add some padding around the cards */
+}
+
+.info-card {
+    background: linear-gradient(135deg, #6BB5FF, #1D64C1);
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.info-card h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    font-size: 1rem;
+}
+
+.info-card a {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.info-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
