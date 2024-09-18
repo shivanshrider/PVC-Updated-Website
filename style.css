@@ -48,7 +48,7 @@
 }
 
 .login-section .login-btn {
-    background-color: #6fa8e7;
+    background: linear-gradient(90deg, #2E5EAA, #4A8FE2);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -66,22 +66,29 @@
     padding-top: 50px;
 }
 .explore {
-    background-color: #6fa8e7;
-}
-
-.sidebar ul {
-    list-style: none;
+    background: linear-gradient(90deg, #2E5EAA, #4A8FE2);
 }
 
 .sidebar ul li {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
     padding: 15px;
     border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul li img {
+    margin-right: 10px; /* Space between image and text */
+}
+.sidebar ul li .explore a {
+    color: white;
 }
 
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold; /* Increase text weight */
 }
+
 
 /* Main Content Styles */
 .main-content {
@@ -520,7 +527,7 @@
 }
 
 .info-card {
-    background: linear-gradient(135deg, #6BB5FF, #1D64C1);
+    background: linear-gradient(90deg, #2E5EAA, #4A8FE2);
     border-radius: 20px;
     width: 180px;
     height: 180px;
